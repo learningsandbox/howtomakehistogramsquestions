@@ -14,25 +14,30 @@ span.search-highlight {
 }
 @media (min-width: 600px) {
   .book.with-summary .book-header.fixed {
-    left: 300px;
+    left: 50px; /*300px*/
   }
 }
 @media (max-width: 1240px) {
   .book .book-body.fixed {
     top: 50px;
   }
+  .book.with-summary .book-body {
+    transform: none;
+    left: 50px; /* calc(100% - 60px) */
+    min-width: 300px;
+  } /* I added this */
   .book .book-body.fixed .body-inner {
     top: auto;
   }
 }
 @media (max-width: 600px) {
   .book.with-summary .book-header.fixed {
-    left: calc(100% - 60px);
+    left: 50px; /* calc(100% - 60px) */
     min-width: 300px;
   }
   .book.with-summary .book-body {
     transform: none;
-    left: calc(100% - 60px);
+    left: 50px; /* calc(100% - 60px) */
     min-width: 300px;
   }
   .book .book-body.fixed {
@@ -90,7 +95,7 @@ div.theorem, div.lemma, div.corollary, div.proposition, div.conjecture {
 span.theorem, span.lemma, span.corollary, span.proposition, span.conjecture {
   font-style: normal;
 }
-div.proof>*:last-child:after {
+div.proof:after {
   content: "\25a2";
   float: right;
 }
