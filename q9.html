@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>How to make a histogram</title>
-  <meta name="description" content="How to make a histogram" />
+  <title>Q9 | How to make a histogram</title>
+  <meta name="description" content="Q9 | How to make a histogram" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="How to make a histogram" />
+  <meta property="og:title" content="Q9 | How to make a histogram" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="How to make a histogram" />
+  <meta name="twitter:title" content="Q9 | How to make a histogram" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="q8.html"/>
 
-<link rel="next" href="q1.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -114,25 +114,109 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">How to make a histogram</h1>
+<div id="q9" class="section level1 unnumbered">
+<h1>Q9</h1>
+<div id="draw-the-graph" class="section level3 unnumbered">
+<h3>Draw the graph</h3>
+<p>Which of the two graphs, A or B, is a histogram for our data:</p>
+<table class="table" style="width: auto !important; ">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: rgba(0, 62, 107, 1) !important;">
+Bins
+</th>
+<th style="text-align:right;color: white !important;background-color: rgba(0, 62, 107, 1) !important;">
+Count
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;color: white !important;background-color: rgba(0, 62, 107, 1) !important;">
+0 - 5
+</td>
+<td style="text-align:right;color: white !important;background-color: rgba(0, 62, 107, 1) !important;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;color: white !important;background-color: rgba(0, 62, 107, 1) !important;">
+5 - 10
+</td>
+<td style="text-align:right;color: white !important;background-color: rgba(0, 62, 107, 1) !important;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;color: white !important;background-color: rgba(0, 62, 107, 1) !important;">
+10 - 15
+</td>
+<td style="text-align:right;color: white !important;background-color: rgba(0, 62, 107, 1) !important;">
+7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;color: white !important;background-color: rgba(0, 62, 107, 1) !important;">
+15 - 20
+</td>
+<td style="text-align:right;color: white !important;background-color: rgba(0, 62, 107, 1) !important;">
+2
+</td>
+</tr>
+</tbody>
+</table>
+<p><img src="_main_files/figure-html/q10-1.png" width="672" /></p>
+<!-- Answer options go here -->
+<div class="radio">
+<p><label>
+<input type="radio" name="question09" id="opt24" value="A" onclick="check_answer()">
+A
+</label></p>
 </div>
-<div id="section" class="section level1 unnumbered">
-<h1>1</h1>
-<p>A histogram is a tool for representing the distribution of a dataset. The distribution is the frequency (how often) or probability (how likely) that values occur in different categories.</p>
-<p>A histogram is a graphical display of continuous data that are divided up into categories or bins. The histogram uses bars, where the width of each bar is the bin interval.</p>
-<p><img src="_main_files/figure-html/q0-1.png" width="672" /></p>
-<!------------------------------------------------------------------>
-<!-----                      new question                   -------->
-<!------------------------------------------------------------------>
+<div class="radio">
+<p><label>
+<input type="radio" name="question09" id="opt25" value="B" onclick="check_answer()">
+B
+</label></p>
+</div>
+<!-- Check answer button -->
+<div id="collapseExample9" class="collapse">
+<div id="answerFeedback9" class="card card-body">
+
+</div>
+</div>
+<!-- Code to update answer feedback -->
+<script type="text/javascript">
+function check_answer()
+{
+    var radioButtons = document.getElementsByName("question09");
+    document.getElementById("answerFeedback9").innerHTML = "Try selecting an answer!!";
+    for(var i = 0; i < radioButtons.length; i++)
+    {
+        if(radioButtons[i].checked == true)
+        {
+            var selectedAnswer = "Your selected answer was " + radioButtons[i].value;
+            <!-- feedback for correct / incorrect response -->
+            var feedback = "<p style='color:orange;'>Hint: Look at the bars in both graphs. Are there gaps between the bars in one of the graphs? If so, this might suggest that you are looking at a bar chart rather than a histogram.</p>" 
+            if(radioButtons[i].value == "A") {
+              feedback = "<p style='color:lightgreen;'>Correct. A histogram has no spaces or gaps between adjacent bars.</p>"
+            }
+            document.getElementById("answerFeedback9").innerHTML = selectedAnswer + "<br>" + feedback;
+            return true;
+        }
+    }
+}
+</script>
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
+<a href="q8.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="q1.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

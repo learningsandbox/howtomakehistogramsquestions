@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>How to make a histogram</title>
-  <meta name="description" content="How to make a histogram" />
+  <title>Q3 | How to make a histogram</title>
+  <meta name="description" content="Q3 | How to make a histogram" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="How to make a histogram" />
+  <meta property="og:title" content="Q3 | How to make a histogram" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="How to make a histogram" />
+  <meta name="twitter:title" content="Q3 | How to make a histogram" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="q1.html"/>
+<link rel="prev" href="q2.html"/>
+<link rel="next" href="q4.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -114,25 +114,71 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">How to make a histogram</h1>
+<div id="q3" class="section level1 unnumbered">
+<h1>Q3</h1>
+<div id="bin-width" class="section level3 unnumbered">
+<h3>Bin width</h3>
+<p>We decide, subjectively, to use four bins for this same set of data: 11, 7, 14, 19, 10, 12, 3, 14, 10, 5, 19, 4, 13, 8, 7. Given the data range that we’ve
+just calculated (16), what bin width would we use?</p>
+<!-- Answer options go here -->
+<div class="radio">
+<p><label>
+<input type="radio" name="question03" id="opt7" value="4" onclick="check_answer()">
+4
+</label></p>
 </div>
-<div id="section" class="section level1 unnumbered">
-<h1>1</h1>
-<p>A histogram is a tool for representing the distribution of a dataset. The distribution is the frequency (how often) or probability (how likely) that values occur in different categories.</p>
-<p>A histogram is a graphical display of continuous data that are divided up into categories or bins. The histogram uses bars, where the width of each bar is the bin interval.</p>
-<p><img src="_main_files/figure-html/q0-1.png" width="672" /></p>
+<div class="radio">
+<p><label>
+<input type="radio" name="question03" id="opt8" value="5" onclick="check_answer()">
+5
+</label></p>
+</div>
+<div class="radio">
+<p><label>
+<input type="radio" name="question03" id="opt9" value="6" onclick="check_answer()">
+6
+</label></p>
+</div>
+<!-- Check answer button -->
+<div id="collapseExample3" class="collapse">
+<div id="answerFeedback3" class="card card-body">
+
+</div>
+</div>
+<!-- Code to update answer feedback -->
+<script type="text/javascript">
+function check_answer()
+{
+    var radioButtons = document.getElementsByName("question03");
+    document.getElementById("answerFeedback3").innerHTML = "Try selecting an answer!!";
+    for(var i = 0; i < radioButtons.length; i++)
+    {
+        if(radioButtons[i].checked == true)
+        {
+            var selectedAnswer = "Your selected answer was " + radioButtons[i].value;
+            <!-- feedback for correct / incorrect response -->
+            var feedback = "<p style='color:orange;'>This could work, but we might be able to find a better bin width. Hint: Try dividing the data range (maximum minus minimum) by the number of bins. Remember that if we get a whole number for our answer, we might want to round up to the next whole number.</p>" 
+            if(radioButtons[i].value == "5") {
+              feedback = "<p style='color:lightgreen;'>This is probably the better choice of bin width for these data. We got to the answer by subtracting the minimum, 3, from the maximum, 19. This gave us a range of 16 (19 - 3 = 16). We divided the range by the number of bins, 4. This gave us the value 4 for the bin width (16 / 4 = 4). Because 4 is a whole number, we rounded up to 5. If we had used a bin width of 4 and started at the minimum value (3), we would have needed a fifth bin to hold our maximum value (19). You can confirm this by writing out the bins - remember to include the &leq; and < symbols. If we had used a bin width of 6, and started at the minimum value (3), we would only use three bins to cover all the data. We could have started at 0 instead, which would also be a reasonable choice to make. A bin width of 5 works if you start at 3 or at 0. If you start at 0, a bin width of 5 has the added benefit of giving you bin limits that are easier to read (0 - 5; 5 - 10; 10 - 15; 15 - 20).</p>"
+            }
+            document.getElementById("answerFeedback3").innerHTML = selectedAnswer + "<br>" + feedback;
+            return true;
+        }
+    }
+}
+</script>
 <!------------------------------------------------------------------>
 <!-----                      new question                   -------->
 <!------------------------------------------------------------------>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="q1.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="q2.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="q4.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

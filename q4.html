@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>How to make a histogram</title>
-  <meta name="description" content="How to make a histogram" />
+  <title>Q4 | How to make a histogram</title>
+  <meta name="description" content="Q4 | How to make a histogram" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="How to make a histogram" />
+  <meta property="og:title" content="Q4 | How to make a histogram" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="How to make a histogram" />
+  <meta name="twitter:title" content="Q4 | How to make a histogram" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="q1.html"/>
+<link rel="prev" href="q3.html"/>
+<link rel="next" href="q5.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -114,25 +114,70 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">How to make a histogram</h1>
+<div id="q4" class="section level1 unnumbered">
+<h1>Q4</h1>
+<div id="bin-limits" class="section level3 unnumbered">
+<h3>Bin limits</h3>
+<p>Now we have the number of bins (4, chosen subjectively) and the bin width (5, calculated in the previous step). Next, we need to construct our bin limits. We can start at our minimum value (3). If we do start there, complete this first bin’s delineation: 3 <span class="math inline">\(\leq\)</span> <span class="math inline">\(x\)</span> <span class="math inline">\(&lt;\)</span> ___.</p>
+<!-- Answer options go here -->
+<div class="radio">
+<p><label>
+<input type="radio" name="question04" id="opt10" value="7" onclick="check_answer()">
+7
+</label></p>
 </div>
-<div id="section" class="section level1 unnumbered">
-<h1>1</h1>
-<p>A histogram is a tool for representing the distribution of a dataset. The distribution is the frequency (how often) or probability (how likely) that values occur in different categories.</p>
-<p>A histogram is a graphical display of continuous data that are divided up into categories or bins. The histogram uses bars, where the width of each bar is the bin interval.</p>
-<p><img src="_main_files/figure-html/q0-1.png" width="672" /></p>
+<div class="radio">
+<p><label>
+<input type="radio" name="question04" id="opt11" value="5" onclick="check_answer()">
+5
+</label></p>
+</div>
+<div class="radio">
+<p><label>
+<input type="radio" name="question04" id="opt12" value="8" onclick="check_answer()">
+8
+</label></p>
+</div>
+<!-- Check answer button -->
+<div id="collapseExample4" class="collapse">
+<div id="answerFeedback4" class="card card-body">
+
+</div>
+</div>
+<!-- Code to update answer feedback -->
+<script type="text/javascript">
+function check_answer()
+{
+    var radioButtons = document.getElementsByName("question04");
+    document.getElementById("answerFeedback4").innerHTML = "Try selecting an answer!!";
+    for(var i = 0; i < radioButtons.length; i++)
+    {
+        if(radioButtons[i].checked == true)
+        {
+            var selectedAnswer = "Your selected answer was " + radioButtons[i].value;
+            <!-- feedback for correct / incorrect response -->
+            var feedback = "<p style='color:orange;'>Hint: Think about how we might combine the starting (lower) value for the bin and the bin width. Perhaps we could add the bin width to the starting value.</p>" 
+            if(radioButtons[i].value == "8") {
+              feedback = "<p style='color:lightgreen;'>Correct. To get to this value, we added our bin width to the lower value of the bin (5 + 3 = 8).</p>"
+            }
+            document.getElementById("answerFeedback4").innerHTML = selectedAnswer + "<br>" + feedback;
+            return true;
+        }
+    }
+}
+</script>
 <!------------------------------------------------------------------>
 <!-----                      new question                   -------->
 <!------------------------------------------------------------------>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="q1.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="q3.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="q5.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

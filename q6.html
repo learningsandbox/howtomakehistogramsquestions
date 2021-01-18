@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>How to make a histogram</title>
-  <meta name="description" content="How to make a histogram" />
+  <title>Q6 | How to make a histogram</title>
+  <meta name="description" content="Q6 | How to make a histogram" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="How to make a histogram" />
+  <meta property="og:title" content="Q6 | How to make a histogram" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="How to make a histogram" />
+  <meta name="twitter:title" content="Q6 | How to make a histogram" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="q1.html"/>
+<link rel="prev" href="q5.html"/>
+<link rel="next" href="q7.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -114,25 +114,89 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">How to make a histogram</h1>
+<div id="q6" class="section level1 unnumbered">
+<h1>Q6</h1>
+<div id="bin-limit-notation" class="section level3 unnumbered">
+<h3>Bin limit notation</h3>
+<p>Either the lower or the upper bin limit can be inclusive, but not both (e.g. 3 <span class="math inline">\(\leq\)</span> <span class="math inline">\(x\)</span> <span class="math inline">\(&lt;\)</span> 8 or 3 <span class="math inline">\(&lt;\)</span> <span class="math inline">\(x\)</span> <span class="math inline">\(\leq\)</span> 8). The rule needs to be applied consistently for all bins. If so, we can simplify the notation (e.g. 3 - 8).</p>
+<p>Which set/s of bin limits is/are correct?</p>
+<!-- Answer options go here -->
+<div class="radio">
+<p><label>
+<input type="radio" name="question06" id="opt16" value="A" onclick="check_answer()">
+A) 3 ≤ x &lt; 8; 8 ≤ x &lt; 13
+</label></p>
 </div>
-<div id="section" class="section level1 unnumbered">
-<h1>1</h1>
-<p>A histogram is a tool for representing the distribution of a dataset. The distribution is the frequency (how often) or probability (how likely) that values occur in different categories.</p>
-<p>A histogram is a graphical display of continuous data that are divided up into categories or bins. The histogram uses bars, where the width of each bar is the bin interval.</p>
-<p><img src="_main_files/figure-html/q0-1.png" width="672" /></p>
+<div class="radio">
+<p><label>
+<input type="radio" name="question06" id="opt17" value="B" onclick="check_answer()">
+B) 3 ≤ x &lt; 8; 8 &lt; x ≤ 13
+</label></p>
+</div>
+<div class="radio">
+<p><label>
+<input type="radio" name="question06" id="opt18" value="C" onclick="check_answer()">
+C) 3 - 8; 9 - 14
+</label></p>
+</div>
+<div class="radio">
+<p><label>
+<input type="radio" name="question06" id="opt19" value="D" onclick="check_answer()">
+D) 3 - 8; 8 - 13
+</label></p>
+</div>
+<div class="radio">
+<p><label>
+<input type="radio" name="question06" id="opt20" value="E" onclick="check_answer()">
+E) A and D
+</label></p>
+</div>
+<div class="radio">
+<p><label>
+<input type="radio" name="question06" id="opt21" value="F" onclick="check_answer()">
+F) B and C
+</label></p>
+</div>
+<!-- Check answer button -->
+<div id="collapseExample6" class="collapse">
+<div id="answerFeedback6" class="card card-body">
+
+</div>
+</div>
+<!-- Code to update answer feedback -->
+<script type="text/javascript">
+function check_answer()
+{
+    var radioButtons = document.getElementsByName("question06");
+    document.getElementById("answerFeedback6").innerHTML = "Try selecting an answer!!";
+    for(var i = 0; i < radioButtons.length; i++)
+    {
+        if(radioButtons[i].checked == true)
+        {
+            var selectedAnswer = "Your selected answer was " + radioButtons[i].value;
+            <!-- feedback for correct / incorrect response -->
+            var feedback = "<p style='color:orange;'>Hint: Two of the sets are correct. Make sure that there are no gaps between the bins (e.g. imagine you had a value of 8.5 that had to be assigned to a bin) and make sure that the rule about which bin limit (upper or lower) is inclusive, is applied consistently. If you start your bins at your minimum data value, then the lower limits of the bins have to be inclusive (otherwise your minimum data value wouldn't fit into that first bin, it would be equal to but not greater than the lower bin limit). If you start your bins at a number different from (i.e. lower than) your minimum data value, then you can decide to make either of the upper or lower bin limits inclusive. This is a subjective choice. If you have BOTH the lower and upper bin limits inclusive, then if you have data value equal to one of those limits, then you wouldn't know which bin to tally the data point in (since it would meet the requirements of both bins).</p> " 
+            if(radioButtons[i].value == "E") {
+              feedback = "<p style='color:lightgreen;'>Correct. Both sets (a and d) are correct. For set d, we just need to remember to apply our rule about which side of the bin limit (upper or lower) is inclusive.</p>"
+            }
+            document.getElementById("answerFeedback6").innerHTML = selectedAnswer + "<br>" + feedback;
+            return true;
+        }
+    }
+}
+</script>
 <!------------------------------------------------------------------>
 <!-----                      new question                   -------->
 <!------------------------------------------------------------------>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="q1.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="q5.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="q7.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
